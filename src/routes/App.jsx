@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
+import Carousel from "../containers/Carousel";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Orders from "../pages/Orders";
@@ -11,7 +12,8 @@ const App = () => {
   return (
     <div className="main">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Carousel />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/app" element={<Layout />}>
           <Route path="/app/home" element={<Home />} />
           <Route path="/app/search" element={<Search />} />

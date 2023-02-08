@@ -1,0 +1,29 @@
+@use "./Login.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ffe031;
+  --dark-color: #414141;
+  --gray-color: #a7a7a7;
+  --bg-color: #ffffff;
+  --app-size: 450px;
+}
+
+body {
+  background-color: var(--gray-color);
+  color: var(--dark-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(auto, var(--app-size));
+  justify-content: center;
+}
